@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-plusplus */
 /* eslint-disable no-loop-func */
 /* eslint-disable no-inner-declarations */
@@ -91,6 +92,7 @@ const Barcode = () => {
         const DIA = rowData[5];
         const side = rowData[6];
         const sph = rowData[7];
+        // eslint-disable-next-line no-unused-vars
         const cyl = rowData[8];
         const axis = rowData[9];
         const add = rowData[10];
