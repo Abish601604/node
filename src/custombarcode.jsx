@@ -1,3 +1,4 @@
+/* eslint-disable no-sequences */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-plusplus */
 /* eslint-disable no-loop-func */
@@ -437,9 +438,9 @@ const Barcode = () => {
                 .map((page) => (
                   <li
                     key={page}
-                    style={{ boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)' }}
+                    // style={{ boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)' }}
                     className={currentPage === page + 1 ? 'active' : ''}
-                    style={{ display: currentPage === page + 1 ? 'block' : 'none' }}
+                    style={{boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)', display: currentPage === page + 1 ? 'block' : 'none' }}
                   >
                     <button onClick={() => handlePageChange(page + 1)}>{page + 1}</button>
                   </li>
